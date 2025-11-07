@@ -503,6 +503,21 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <!-- Trigger -->
+<button id="uploadBtn">Upload Dokumentasi</button>
+
+<!-- Modal Pop-up -->
+<div id="uploadModal" style="display:none;">
+  <form id="uploadForm">
+    <label>Nama Kegiatan: <input type="text" name="nama_kegiatan" required></label><br>
+    <label>Tanggal: <input type="date" name="tanggal" required></label><br>
+    <label>File (max 200): <input type="file" name="files" multiple accept=".jpg,.png,.gif,.zip,.rar" required></label><br>
+    <button type="submit">Simpan</button>
+    <button type="button" id="closeModal">Batal</button>
+  </form>
+  <div id="loadingBar" style="display:none;">Unggah... <span id="uploadPercent">0</span>%</div>
+</div>
 </body>
+
 
 </html>
